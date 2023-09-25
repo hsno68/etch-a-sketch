@@ -7,6 +7,7 @@ for (let i = 0; i < 16; i++) {
   for (let j = 0; j < 16; j++) {
     const child = document.createElement("div");
     child.classList.add("child");
+    child.addEventListener("mouseenter", () => child.classList.add("hovered"));
     childContainer.appendChild(child);
   }
 }
