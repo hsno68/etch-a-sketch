@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-container {
+  height: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.child-container {
+  display: flex;
+  flex: 1;
+  border: 1px solid blue;
+}
+
+.child {
+  flex: 1;
+  border: 1px solid green;
+}
