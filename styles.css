@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .parent-container {
@@ -33,4 +34,21 @@ body {
 
 .hovered {
   background-color: #43c5f5;
+}
+
+.buttons-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 200px;
+  padding: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #063f5c;
+  background-color: #43c5f5;
+  border-radius: 8px;
+  border: none;
 }
