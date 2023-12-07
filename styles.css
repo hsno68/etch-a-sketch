@@ -5,6 +5,7 @@
 }
 
 body {
+  background: url(imgs/background.png);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,18 +19,17 @@ body {
   width: 1000px;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  border: 1px solid #43c5f5;
 }
 
 .child-container {
   display: flex;
   flex: 1;
-  border: 1px solid blue;
 }
 
 .child {
   flex: 1;
-  border: 1px solid green;
+  border: 1px solid #e5e7e8;
 }
 
 .hovered {
@@ -47,8 +47,15 @@ button {
   padding: 12px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #063f5c;
+  color: white;
   background-color: #43c5f5;
   border-radius: 8px;
   border: none;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0d47a3;
 }
