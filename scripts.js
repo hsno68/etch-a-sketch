@@ -3,10 +3,10 @@ const generateButton = document.querySelector(".generate-button");
 const clearButton = document.querySelector(".clear-button");
 
 generateButton.addEventListener("click", createGrid);
-clearButton.addEventListener("click", () => parentContainer.replaceChildren());
+clearButton.addEventListener("click", clearGrid);
 
 function createGrid() {
-  parentContainer.replaceChildren();
+  clearGrid();
   const gridSize = prompt("Input a size for the grid");
   for (let i = 0; i < gridSize; i++) {
     const childContainer = document.createElement("div");
@@ -19,4 +19,8 @@ function createGrid() {
       childContainer.appendChild(child);
     }
   }
+}
+
+function clearGrid() {
+  parentContainer.replaceChildren();
 }
