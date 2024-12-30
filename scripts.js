@@ -8,6 +8,10 @@ clearButton.addEventListener("click", clearGrid);
 function createGrid() {
   clearGrid();
   const gridSize = prompt("Input a size for the grid");
+  if (gridSize > 100) {
+    alert("Please input a size less than or equal to 100 per side.");
+    return;
+  }
   for (let i = 0; i < gridSize; i++) {
     const childContainer = document.createElement("div");
     childContainer.classList.add("child-container");
